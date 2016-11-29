@@ -5,77 +5,91 @@
 <head>
     <title>AT Gladiator</title>
     <link href="css2/bootstrap.css" rel="stylesheet">
+    <script src="jquery.js"></script>
 </head>
 
 
 
 <body>
-  <div class="container-fluid">
-
-    <center>
-        <h1 class="pl1"><img class="pl1" src="bubblegumprofile.jpg" width="50" height="50">Princess BubbleGum</h1>
-        <h2>vs</h2>
-        <h1 class="pl2"><img class="pl2" src="marcelineprofile.jpg" width="50" height="50" >Queen Marceline </h1>
-    </center>
+    <div class="container-fluid">
 
 
+        <center>
+            <h1 class="pl1"><img class="pl1" src="bubblegumprofile.jpg" width="50" height="50">Princess BubbleGum</h1>
+            <h2>vs</h2>
+            <h1 class="pl2"><img class="pl2" src="marcelineprofile.jpg" width="50" height="50" >Queen Marceline </h1>
+        </center>
+
+<hr/>
 
         <div class="row">
-            <div class="player1">
-                <div class="col-md-6">
+
+            <div class="col-md-6">
+
+                <center>
+                    <img src="bublegumfight.gif" width="400" height="400" alt="" class="img-circle">
+                </center>
+
+                <div class="player1">
                     <center>
+                        <div class="progress1">
 
-                        <img src="bublegumfight.gif" width="400" height="400" alt="" class="img-circle">
-                        <div class="player1">
-                          <div class="progress1">
-                              <div id="myBar1" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style=" color:pink;width: 100%">
-                                  <div id="label1">100%</div>
-                              </div>
-                          </div>
-
-                          <br/>
-                            <h1 id="content1">Player 1</h1>
-
-                            <!-- <p> Rage: </p> -->
-
-                            <div id ="content1"> </div>
-
-                            <button id="attack1" type="button" name="progress" value="20" class="btn btn-info" onclick="attack1()">Attack!</button>
-                            <!-- <button id="heal1" type="button" class="btn btn-info" onclick="something();">Heal!</button> -->
-                            <br/>
-
+                            <div id="myBar1" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style=" color:pink;width: 100%">
+                                <div id="label1">100%</div>
+                            </div>
                         </div>
+
+                        <br/>
+                        <h1 id="content1">Player 1</h1>
+
+
+                        <div id="content1"> </div>
+<p> Press 'A' to attack!</p>
+                        <!-- <button id="attack1" type="button" name="progress" value="20" class="btn btn-info" onclick="attack1()">Attack!</button> -->
+                        <!-- <button id="heal1" type="button" class="btn btn-info" onclick="something();">Heal!</button> -->
+                        <br/>
                     </center>
+
+
                 </div>
             </div>
+
 
 
 
             <div class="col-md-6">
                 <center>
                     <img src="marcelinefight.gif" width="400" height="400" alt="" class="img-circle">
-                    <div class="player2">
-                      <div class="progress2">
-                          <div id="myBar2" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="color:maroon;width: 100%">
-                            <div id="label2">100%</div>
-                          </div>
-                      </div>
-                      <br/>
+                </center>
+                <div class="player2">
+                    <center>
+                        <div class="progress2">
+                            <div id="myBar2" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="color:maroon;width: 100%">
+                                <div id="label2">100%</div>
+                            </div>
+                        </div>
+                        <br/>
 
                         <h1 id="content2">Player 2  </h1>
-                        <!-- <p> Rage: </p> -->
 
 
-                        <button id="attack2" type="button" class="btn btn-danger" onclick="attack2();">Attack!</button>
+
+                        <!-- <button id="attack2" type="button" class="btn btn-danger" onclick="attack2();">Attack!</button> -->
+                        <p> Press 'ENTER' to attack!</P>
                         <!-- <button id="heal2" type="button" class="btn btn-danger">Heal!</button> -->
                         <br/>
 
+                    </center>
+                </div>
+                <!-- player 2 div -->
 
-                    </div>
-                </center>
+
             </div>
+            <!-- 1st col md -->
         </div>
+        <!-- row div -->
     </div>
+    <!-- container fluid div-->
     <script src="gladiator.js"></script>
 </body>
 <audio class="a1" controls>

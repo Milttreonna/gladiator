@@ -1,7 +1,13 @@
-// function something() {alert("IT DID SOMETHING!");}
-//
-//
-function attack1() {
+window.addEventListener("keydown", checkKeyPressed1, false);
+window.addEventListener("keydown", checkKeyPressed2, false);
+
+
+
+
+
+// function attack1() {
+  function checkKeyPressed1(evnt) {
+      if (evnt.keyCode == "65") {
   var bar = document.getElementById("myBar2");
   var width = 100; // determines where it starts at
   var id = setInterval(frame,1000);
@@ -18,9 +24,11 @@ function attack1() {
       document.getElementById("label2").innerHTML = width * 1  + '%';
     }
   }
-}
+}}
 
-function attack2() {
+function checkKeyPressed2(evnt) {
+    if (evnt.keyCode == "13") {
+
   var bar = document.getElementById("myBar1");
   var width = 100;
   var id = setInterval(frame,1000);
@@ -38,5 +46,5 @@ function attack2() {
       document.getElementById("label1").innerHTML = width * 1  + '%';
     }
 
-  }
+  }}
 }
