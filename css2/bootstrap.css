@@ -14,6 +14,9 @@ html {
     -ms-text-size-adjust: 100%;
 }
 
+
+progress::-webkit-progress-value { background: #701334; }
+
 .a1 {
     display: none;
 }
@@ -51,7 +54,7 @@ h2 {
 
 body {
     font-family: courier;
-    background-image: url("crowd.gif");
+    background-image: url("background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left top;
